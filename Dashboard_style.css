@@ -1,0 +1,308 @@
+/* Dashboard Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header Section */
+header {
+    background-color: white;
+    color: #4a5568;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    position: relative; /* Added to position the language toggle button */
+}
+
+header h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #5a67d8;
+}
+
+header p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Main Buttons Section */
+section {
+    margin-bottom: 30px;
+}
+
+section > div {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons */
+button {
+    background-color: #5a67d8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 4px 6px rgba(90, 103, 216, 0.2);
+}
+
+button:hover {
+    background-color: #4c51bf;
+    transform: translateY(-2px);
+    box-shadow: 0 7px 14px rgba(90, 103, 216, 0.3);
+}
+
+/* list background color changer*/
+
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(90, 103, 216, 0.2);
+}
+
+#manageStoragesBtn {
+    background-color: #5a67d8;
+}
+
+#manageStoragesBtn:hover {
+    background-color: #4c51bf;
+    box-shadow: 0 7px 14px rgba(90, 103, 216, 0.3);
+}
+
+#viewHistoryBtn {
+    background-color: #5a67d8;
+}
+
+#viewHistoryBtn:hover {
+    background-color: #4c51bf;
+    box-shadow: 0 7px 14px rgba(90, 103, 216, 0.3);
+}
+
+a button {
+    background-color: #5a67d8;
+}
+
+a button:hover {
+    background-color: #4c51bf;
+    box-shadow: 0 7px 14px rgba(90, 103, 216, 0.3);
+}
+
+/* Form Styles */
+h2 {
+    color: #5a67d8;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #4a5568;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #e2e8f0;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s;
+    background-color: #f7fafc;
+}
+
+input:focus {
+    outline: none;
+    border-color: #5a67d8;
+    box-shadow: 0 0 0 3px rgba(90, 103, 216, 0.2);
+    background-color: #fff;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    background-color: #f7fafc;
+    font-weight: 600;
+    color: #4a5568;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+tr:hover {
+    background-color: #f7fafc;
+}
+
+td button {
+    padding: 6px 10px;
+    margin-right: 5px;
+    font-size: 12px;
+    background-color: #5a67d8;
+}
+
+td button:hover {
+    background-color: #4c51bf;
+}
+
+/* Footer */
+footer {
+    text-align: center !important;
+    margin-top: 40px;
+    padding: 20px;
+    color: white;
+    font-size: 14px;
+}
+
+footer {
+    text-align: center!important;
+}
+
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    section > div {
+        padding: 15px;
+    }
+    
+    button {
+        width: 100%;
+        margin-right: 0;
+    }
+    
+    th, td {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+}
+
+/* Add animation similar to login page */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+section > div {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Language Toggle Button Styling - Updated to match Login_style.css */
+.language-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+.language-toggle button {
+    padding: 8px 15px;
+    background-color: #5a67d8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    transition: all 0.3s;
+    box-shadow: 0 4px 6px rgba(90, 103, 216, 0.2);
+}
+
+.language-toggle button:hover {
+    background-color: #4c51bf;
+    transform: translateY(-2px);
+    box-shadow: 0 7px 14px rgba(90, 103, 216, 0.3);
+}
+
+.language-toggle button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(90, 103, 216, 0.2);
+}
+
+/* RTL support for Arabic */
+html[lang="ar"] body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html[lang="ar"] table {
+    text-align: right;
+}
+
+html[lang="ar"] header, 
+html[lang="ar"] section, 
+html[lang="ar"] footer {
+    text-align: right;
+}
+
+/* Add RTL support for language toggle button */
+html[lang="ar"] .language-toggle {
+    right: auto;
+    left: 20px;
+}
+
+/* Style for select elements to match other form inputs */
+select {
+
+
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #e2e8f0;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s;
+    background-color: #f7fafc;
+}
+
+/* Add hover effect to match other inputs */
+select:hover {
+    border-color: #5a67d8;
+}
+
+/* Add focus effect to match other inputs */
+select:focus {
+
+    outline: none;
+    border-color: #5a67d8;
+    box-shadow: 0 0 0 3px rgba(90, 103, 216, 0.2);
+    background-color: #fff;
+}

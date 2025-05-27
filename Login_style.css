@@ -1,0 +1,180 @@
+/* Modern Login Page Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #333;
+    line-height: 1.6;
+    height: 100vh;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-form-section {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    width: 400px;
+    max-width: 90%;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+    color: #5a67d8;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #4a5568;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #e2e8f0;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s;
+    background-color: #f7fafc;
+}
+
+input:focus {
+    outline: none;
+    border-color: #5a67d8;
+    box-shadow: 0 0 0 3px rgba(90, 103, 216, 0.2);
+    background-color: #fff;
+}
+
+button {
+    background-color: #5a67d8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 14px 20px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 4px 6px rgba(90, 103, 216, 0.2);
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #4c51bf;
+    transform: translateY(-2px);
+    box-shadow: 0 7px 14px rgba(90, 103, 216, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(90, 103, 216, 0.2);
+}
+
+a {
+    color: #5a67d8;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 14px;
+}
+
+a:hover {
+    color: #4c51bf;
+    text-decoration: underline;
+}
+
+.links-section {
+    text-align: center;
+    margin-top: 25px;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 20px;
+}
+
+.links-section p {
+    margin: 10px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .login-form-section {
+        padding: 30px 20px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+}
+
+
+/* Add this to your existing Login_style.css file */
+
+/* Language Toggle Button Styling */
+.language-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+.language-toggle button {
+    padding: 8px 15px;
+    background-color: #5a67d8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    transition: all 0.3s;
+    box-shadow: 0 4px 6px rgba(90, 103, 216, 0.2);
+}
+
+.language-toggle button:hover {
+    background-color: #4c51bf;
+    transform: translateY(-2px);
+    box-shadow: 0 7px 14px rgba(90, 103, 216, 0.3);
+}
+
+.language-toggle button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(90, 103, 216, 0.2);
+}
+
+/* RTL support for Arabic */
+html[lang="ar"] body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html[lang="ar"] .login-form-section {
+    text-align: right;
+}
