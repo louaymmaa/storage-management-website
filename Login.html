@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage Management - Login</title>
+    <link rel="stylesheet" href="Login_style.css">
+</head>
+<body>
+    <!-- Language Toggle Button -->
+    <div class="language-toggle">
+        <button id="languageToggle">العربية</button>
+    </div>
+    
+    <!-- Main Container -->
+    <div class="login-container">
+        
+        <!-- Login Form Section -->
+        <section class="login-form-section">
+            <h1 class="translate" data-en="Storage Management System" data-ar="نظام إدارة المخزون">Storage Management System</h1>
+            
+            <!-- Login Form Starts Here -->
+            <form method="POST" action="">
+                
+                <!-- Input for Username -->
+                <div>
+                    <label for="username" class="translate" data-en="Username" data-ar="اسم المستخدم">Username</label>
+                    <input type="text" id="username" name="username" onkeyup="username()" placeholder="Enter your username" required>
+                </div>
+                
+                <!-- Input for Password -->
+                <div>
+                    <label for="password" class="translate" data-en="Password" data-ar="كلمة المرور">Password</label>
+                    <input type="password" id="password" name="password" onkeyup="password()" placeholder="Enter your password" required>
+                </div>
+                
+                <!-- Login Button -->
+                <div>
+                    <button type="submit" class="translate" data-en="Login" data-ar="تسجيل الدخول">Login</button>
+                </div>
+                
+            </form>
+            <!-- Login Form Ends Here -->
+            
+        </section>
+    </div>
+    
+    <!-- Add script reference -->
+    <script src="script.js"></script>
+</body>
+</html>
