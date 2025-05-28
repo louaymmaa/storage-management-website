@@ -11,25 +11,26 @@ A bilingual (Arabic/English) responsive web application for managing storage ope
 - 🧠 Simple and intuitive user interface
 
 ## Screenshots
-![Login Screenshot](Login.png)
+
+![Login Screenshot](Login.png)  
 ![Dashboard Screenshot](DashBoardpng.png)
 
 ## How to Run
 
 > ⚠️ This version is a **frontend demo only**  
-> Backend (PHP/MySQL) was removed to allow online preview
+> The backend (PHP/MySQL) was removed to allow online preview.
 
 1. Clone the repository or download the ZIP  
 2. Open `index.html` in any modern browser  
-3. Browse the site and test UI features
+3. Browse the site and test the UI features
 
 ## Project Structure
 
-- `index.html` – Login page(main page)
+- `index.html` – Login page (main page)
 - `index_style.css` – Login styling
-- `Dashboard.html` - dashboard page
-- `Dashboard_style` - dashboard styling
-- `script.js` – pages actions
+- `Dashboard.html` – Dashboard page
+- `Dashboard_style.css` – Dashboard styling
+- `script.js` – Handles page interactions; originally used for client-server communication before PHP/SQL removal
 
 ## Author
 
