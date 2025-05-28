@@ -21,9 +21,10 @@ A bilingual (Arabic/English) responsive web application for managing storage ope
 > ⚠️ This version is a **frontend demo only**  
 > The backend (PHP/MySQL) was removed to allow online preview.
 
-1. Clone the repository or download the ZIP  
-2. Open `index.html` in any modern browser  
+1. Open `index.html` in any modern browser  
+2. Use `admin` as the username and `password` as the password to sign in  
 3. Browse the site and test the UI features
+
 
 ## Project Structure
 
