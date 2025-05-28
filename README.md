@@ -25,9 +25,11 @@ A bilingual (Arabic/English) responsive web application for managing storage ope
 
 ## Project Structure
 
-- `index.html` – Main page
-- `style.css` – Page styling
-- `script.js` – Client-side interactions
+- `index.html` – Login page(main page)
+- `index_style.css` – Login styling
+- `Dashboard.html` - dashboard page
+- `Dashboard_style` - dashboard styling
+- `script.js` – pages actions
 
 ## Author
 
