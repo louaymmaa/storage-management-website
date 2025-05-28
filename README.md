@@ -13,6 +13,7 @@ A bilingual (Arabic/English) responsive web application for managing storage ope
 ## Screenshots
 
 ![Login Screenshot](Login.png)  
+
 ![Dashboard Screenshot](DashBoardpng.png)
 
 ## How to Run
